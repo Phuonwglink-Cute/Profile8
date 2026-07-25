@@ -1,0 +1,1107 @@
+
+/*==================================================
+    BLUEBLACK PREMIUM OVERRIDES V3
+==================================================*/
+
+/* Keep the layout balanced and compact */
+.section-title{
+    margin-bottom: 46px;
+}
+
+.section-title h2{
+    font-size: clamp(30px, 4vw, 40px);
+    line-height: 1.1;
+}
+
+.section-title p{
+    font-size: 15px;
+    max-width: 620px;
+}
+
+section{
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+/* Avatar: round, centered, no square frame */
+.avatar{
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: 6px solid rgba(255,255,255,.06);
+}
+
+.avatar-ring{
+    border-radius: 50%;
+}
+
+.online-status{
+    display: none !important;
+}
+
+/* Make the hero and main cards more balanced */
+.hero-container{
+    align-items: center;
+}
+
+.hero-right .glass-card{
+    max-width: 720px;
+    margin-inline: auto;
+}
+
+.hero-buttons{
+    gap: 14px;
+}
+
+.hero-buttons .btn{
+    min-width: 150px;
+    padding: 13px 22px;
+}
+
+.social-list{
+    gap: 12px;
+    justify-content: center;
+}
+
+.social-list a{
+    width: 48px;
+    height: 48px;
+}
+
+/* Compact stats so they don't overpower */
+.hero-stats{
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.stat-box{
+    padding: 18px 14px;
+    border-radius: 18px;
+    min-height: 92px;
+}
+
+.stat-box h2{
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+/* Project cards: smaller and symmetrical */
+.projects .section-title{
+    margin-bottom: 34px;
+}
+
+.project-grid{
+    max-width: 980px;
+    margin-inline: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card{
+    padding: 24px 22px;
+    border-radius: 22px;
+    min-height: 230px;
+}
+
+.project-card i{
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+.project-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+/* Services / "Mình có thể làm gì?" look smaller and cleaner */
+.service-grid{
+    max-width: 980px;
+    margin-inline: auto;
+    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.service-card{
+    padding: 26px 20px;
+    border-radius: 22px;
+    min-height: 210px;
+}
+
+.service-card i{
+    font-size: 38px;
+    margin-bottom: 16px;
+}
+
+.service-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* About card: more premium, balanced */
+.about-container{
+    max-width: 1100px;
+    margin-inline: auto;
+    gap: 44px;
+    align-items: center;
+}
+
+.about-image img{
+    border-radius: 28px;
+}
+
+.about-content h3{
+    font-size: clamp(24px, 3vw, 32px);
+}
+
+.about-info{
+    gap: 14px;
+}
+
+.info-item{
+    padding: 16px 16px;
+    border-radius: 16px;
+}
+
+/* Music player: centered, premium and compact */
+.music-player{
+    max-width: 980px;
+    margin-inline: auto;
+    padding: 30px 24px;
+    border-radius: 30px;
+}
+
+.music-cover-wrap{
+    width: min(100%, 300px);
+}
+
+.music-cover{
+    width: 240px;
+    height: 240px;
+    border-radius: 28px;
+    margin-inline: auto;
+}
+
+.music-meta{
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.music-label{
+    margin-bottom: 14px;
+}
+
+.music-meta h3{
+    text-align: center;
+}
+
+.music-meta p{
+    text-align: center;
+}
+
+.music-progress-row{
+    max-width: 760px;
+    margin-inline: auto;
+    grid-template-columns: 52px 1fr 52px;
+    gap: 12px;
+}
+
+.music-controls{
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.music-btn{
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+}
+
+.music-btn.play{
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+}
+
+.music-playlist{
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+/* Contact: change to 2 columns and more premium icon badges */
+.contact-grid{
+    max-width: 960px;
+    margin-inline: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.contact-card{
+    min-height: 176px;
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg, rgba(79,140,255,.08), rgba(139,92,246,.08));
+    opacity:0;
+    transition: .35s ease;
+}
+
+.contact-card:hover::before{
+    opacity:1;
+}
+
+.contact-card i{
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(79,140,255,.95), rgba(139,92,246,.92));
+    box-shadow: 0 12px 26px rgba(79,140,255,.25);
+}
+
+.contact-card h3{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.contact-card span{
+    font-size: 13px;
+    opacity: .86;
+}
+
+.contact-card:nth-child(2) i{ background: linear-gradient(135deg,#7c3aed,#111827); }
+.contact-card:nth-child(3) i{ background: linear-gradient(135deg,#f472b6,#8b5cf6); }
+.contact-card:nth-child(4) i{ background: linear-gradient(135deg,#06b6d4,#3b82f6); }
+.contact-card:nth-child(5) i{ background: linear-gradient(135deg,#38bdf8,#2563eb); }
+.contact-card:nth-child(6) i{ background: linear-gradient(135deg,#4f8cff,#0f172a); }
+
+/* Footer balance */
+footer{
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+/* Loading screen: centered, pro, no lệch */
+#loader{
+    background:
+        radial-gradient(circle at top, rgba(79,140,255,.12), transparent 36%),
+        radial-gradient(circle at bottom, rgba(139,92,246,.10), transparent 32%),
+        #050816;
+}
+
+.loader-box{
+    width: min(92vw, 460px);
+    padding: 36px 26px 28px;
+    border-radius: 34px;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+.loader-ring{
+    top: 24px;
+    width: 176px;
+    height: 176px;
+}
+
+.loader-avatar{
+    width: 112px;
+    height: 112px;
+}
+
+.loader-brand{
+    margin-top: 16px;
+    letter-spacing: .42em;
+}
+
+.loader-percent{
+    font-size: clamp(38px, 6vw, 48px);
+}
+
+.loader-bar{
+    height: 10px;
+}
+
+.loader-sub{
+    margin-top: 12px;
+}
+
+/* small helper to avoid layout drift on mobile */
+@media (max-width: 768px){
+    .project-grid,
+    .service-grid{
+        grid-template-columns: 1fr;
+        max-width: 520px;
+    }
+
+    .contact-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .contact-card{
+        min-height: 160px;
+        padding: 18px 14px;
+    }
+
+    .contact-card i{
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+        border-radius: 16px;
+    }
+
+    .hero-right .glass-card{
+        padding: 28px 22px 24px;
+    }
+
+    .music-player{
+        padding: 24px 18px;
+    }
+
+    .music-cover{
+        width: 210px;
+        height: 210px;
+    }
+
+    .music-btn{
+        width: 48px;
+        height: 48px;
+    }
+
+    .music-btn.play{
+        width: 66px;
+        height: 66px;
+    }
+
+    .loader-ring{
+        width: 160px;
+        height: 160px;
+    }
+
+    .loader-avatar{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Remove gallery traces if any */
+.gallery,
+.gallery-grid,
+.gallery-item{
+    display:none !important;
+}
+
+/*==================================================
+    BLUEBLACK PREMIUM FIX V4
+==================================================*/
+
+.hero-right .glass-card{ text-align:center; max-width:760px; margin-inline:auto; }
+.hero-right .badge{ margin:0 auto 18px; padding:9px 16px; letter-spacing:.08em; font-weight:600; }
+.hero-right .hero-buttons{ justify-content:center; }
+.hero-right .hero-buttons .btn{ min-width:160px; }
+.hero-right .social-list{ justify-content:center; }
+.hero p{ max-width:640px; margin-inline:auto; }
+
+.avatar-card{ position:relative; isolation:isolate; }
+.avatar-card::before{ content:""; position:absolute; inset:-22px; border-radius:50%; border:1px solid rgba(56,189,248,.16); box-shadow:0 0 0 14px rgba(124,58,237,.03); opacity:.75; }
+.avatar{ width:min(78vw, 290px); height:min(78vw, 290px); border-radius:50%; object-fit:cover; border:6px solid rgba(255,255,255,.05); box-shadow:0 0 0 10px rgba(255,255,255,.03), 0 0 38px rgba(56,189,248,.32), 0 0 90px rgba(124,58,237,.10); }
+.avatar-ring{ position:absolute; inset:-18px; width:auto; height:auto; border-radius:50%; background:conic-gradient(from 0deg, rgba(56,189,248,0) 0deg, rgba(56,189,248,.75) 70deg, rgba(124,58,237,.92) 150deg, rgba(56,189,248,.18) 220deg, rgba(56,189,248,0) 360deg); -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px)); mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px)); box-shadow:0 0 26px rgba(56,189,248,.16); animation:spin 14s linear infinite; }
+
+#loader{ background:radial-gradient(circle at 50% 28%, rgba(56,189,248,.16), transparent 35%), radial-gradient(circle at 50% 72%, rgba(124,58,237,.10), transparent 30%), linear-gradient(180deg, #050816 0%, #0b1220 45%, #040816 100%); }
+.loader-box{ width:min(92vw, 480px); padding:34px 28px 28px; }
+.loader-figure{ position:relative; width:188px; height:188px; margin:0 auto 12px; display:grid; place-items:center; }
+.loader-ring{ position:absolute; inset:0; margin:auto; width:188px; height:188px; border-radius:50%; background:conic-gradient(from 0deg, rgba(56,189,248,.08), rgba(56,189,248,.92), rgba(124,58,237,.92), rgba(56,189,248,.08)); -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px)); mask:radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 4px)); box-shadow:0 0 0 10px rgba(56,189,248,.04), 0 0 50px rgba(56,189,248,.14); animation:spin 7s linear infinite; }
+.loader-avatar{ width:118px; height:118px; border-radius:50%; object-fit:cover; position:relative; z-index:2; border:0; box-shadow:0 0 0 7px rgba(255,255,255,.04), 0 0 30px rgba(56,189,248,.25), 0 0 70px rgba(124,58,237,.12); animation:loaderFloat 3.8s ease-in-out infinite; }
+@keyframes loaderFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+.loader-brand{ margin-top:10px; font-size:11px; letter-spacing:.52em; }
+.loader-box h2{ margin-top:10px; font-size:24px; letter-spacing:.02em; }
+.loader-percent{ margin:12px 0 14px; font-size:clamp(40px,7vw,60px); }
+.loader-bar{ height:12px; border-radius:999px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.08); box-shadow:inset 0 1px 4px rgba(255,255,255,.05); }
+.loader-sub{ margin-top:12px; font-size:13px; letter-spacing:.04em; }
+.loader-particles{ z-index:0; }
+.loader-box > *:not(.loader-particles):not(.loader-figure){ position:relative; z-index:2; }
+
+.about-image{ display:none !important; }
+.about-container{ grid-template-columns:1fr !important; max-width:920px; }
+.about-content{ text-align:center; padding:34px 30px; margin-inline:auto; border-radius:30px; }
+.about-vip-card{ position:relative; overflow:hidden; }
+.about-vip-card::before{ content:""; position:absolute; inset:0; background:radial-gradient(circle at top, rgba(56,189,248,.10), transparent 40%); pointer-events:none; }
+.vip-head{ display:inline-flex; align-items:center; gap:10px; margin:0 auto 16px; padding:8px 16px; border-radius:999px; background:rgba(56,189,248,.12); color:var(--primary); letter-spacing:.12em; font-size:12px; font-weight:700; text-transform:uppercase; }
+.vip-dot{ width:8px; height:8px; border-radius:50%; background:linear-gradient(135deg, var(--primary), var(--secondary)); box-shadow:0 0 16px rgba(56,189,248,.5); }
+.about-content h3{ margin-bottom:16px; }
+.about-content p{ max-width:760px; margin-inline:auto; }
+.about-info{ max-width:780px; margin:30px auto 0; }
+.info-item{ justify-content:center; }
+
+.skills-right .glass-card{ max-width:620px; margin:0 auto; padding:28px 24px 24px; border-radius:28px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.skills-right .glass-card h3{ grid-column:1/-1; text-align:center; margin-bottom:8px; font-size:clamp(22px,3vw,28px); }
+.vip-tag{ grid-column:1/-1; width:max-content; margin:0 auto 4px; display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:rgba(56,189,248,.12); color:var(--primary); font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+.vip-list{ grid-column:1/-1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.vip-list p{ margin:0; padding:14px 16px 14px 42px; border-radius:18px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); color:var(--text); line-height:1.5; position:relative; font-size:14px; }
+.vip-list p::before{ content:"✓"; position:absolute; left:16px; top:50%; transform:translateY(-50%); color:var(--primary); font-weight:800; }
+.vip-list p:hover{ background:rgba(56,189,248,.10); border-color:rgba(56,189,248,.24); transform:translateY(-2px); }
+
+.stats{ width:min(1180px,84%); margin:0 auto; padding:0 0 98px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.stat-card{ position:relative; overflow:hidden; min-height:186px; padding:24px 18px 22px; border-radius:24px; background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04)); border:1px solid rgba(255,255,255,.09); box-shadow:0 18px 32px rgba(0,0,0,.18); text-align:center; display:grid; place-items:center; gap:8px; }
+.stat-card::before{ content:""; position:absolute; inset:0; background:radial-gradient(circle at top, rgba(56,189,248,.08), transparent 44%); pointer-events:none; }
+.stat-card i{ width:58px; height:58px; display:grid; place-items:center; border-radius:18px; background:linear-gradient(135deg, rgba(56,189,248,.20), rgba(124,58,237,.18)); color:#fff; font-size:22px; box-shadow:0 0 0 1px rgba(255,255,255,.08), 0 10px 18px rgba(56,189,248,.12); }
+.stat-card h2{ font-size:clamp(32px,4vw,46px); line-height:1; color:#fff; margin:2px 0 0; }
+.stat-card p{ font-size:14px; color:var(--text2); }
+
+.projects .project-grid, .services .service-grid{ max-width:1080px; margin-inline:auto; gap:18px; }
+.project-card, .service-card{ min-height:200px; padding:24px 22px; border-radius:24px; }
+
+.contact-grid{ max-width:1180px; margin-inline:auto; gap:16px; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.contact-card{ min-height:172px; padding:24px 18px; border-radius:26px; }
+.contact-card i{ width:64px; height:64px; border-radius:22px; }
+
+.music-player{ max-width:1020px; padding:34px 30px; }
+.music-cover{ width:260px; height:260px; }
+.music-meta h3{ max-width:760px; margin-inline:auto; text-wrap:balance; }
+.music-progress-row{ max-width:760px; margin-inline:auto; }
+.music-controls{ gap:12px; }
+.music-btn{ width:52px; height:52px; border-radius:18px; }
+.music-btn.play{ width:76px; height:76px; border-radius:24px; }
+
+@media (max-width: 1100px){
+    .stats{ grid-template-columns:repeat(2,minmax(0,1fr)); width:min(1180px,90%); }
+    .contact-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .skills-right .glass-card{ max-width:720px; }
+}
+
+@media (max-width: 768px){
+    .avatar{ width:250px; height:250px; }
+    .avatar-card::before{ inset:-16px; }
+    .avatar-ring{ inset:-12px; }
+    .loader-box{ width:min(92vw,420px); padding:30px 20px 24px; }
+    .loader-figure{ width:166px; height:166px; }
+    .loader-ring{ width:166px; height:166px; }
+    .loader-avatar{ width:104px; height:104px; }
+    .about-content{ padding:28px 20px; }
+    .skills-right .glass-card{ grid-template-columns:1fr; }
+    .vip-list{ grid-template-columns:1fr; }
+    .stats{ grid-template-columns:1fr; width:min(1180px,94%); }
+    .stat-card{ min-height:160px; }
+    .contact-grid{ grid-template-columns:1fr; }
+    .music-cover{ width:220px; height:220px; }
+    .music-player{ padding:28px 20px; }
+    .music-btn.play{ width:68px; height:68px; }
+}
+
+/* ===============================
+   BLUEBLACK PREMIUM V8 FIXES
+============================== */
+
+/* Hero balance */
+#home.hero{
+    position:relative;
+    padding-bottom:120px;
+}
+.hero-container{
+    max-width:1200px;
+    margin-inline:auto;
+    grid-template-columns:minmax(280px, 320px) minmax(0, 1fr);
+    gap:clamp(28px, 4vw, 48px);
+}
+.hero-right .glass-card{
+    max-width:760px;
+    margin-inline:auto;
+}
+.hero-right .badge{
+    margin-inline:auto;
+}
+.hero-right h1,
+.hero-right h2,
+.hero-right h3,
+.hero-right p{
+    text-align:center;
+}
+.hero-right .hero-buttons{
+    justify-content:center;
+}
+.hero-right .social-list{
+    justify-content:center;
+}
+.hero-stats{
+    max-width:760px;
+    margin-inline:auto;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:14px;
+}
+.stat-box{
+    min-height:96px;
+    padding:18px 14px;
+}
+
+/* Scroll down: keep it inside the hero, centered and clean */
+.scroll-down{
+    position:absolute;
+    left:50%;
+    bottom:28px;
+    transform:translateX(-50%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    padding:10px 14px;
+    z-index:3;
+    color:var(--text2);
+    text-align:center;
+    opacity:.92;
+    transition:transform .25s ease, color .25s ease, opacity .25s ease;
+}
+.scroll-down:hover{
+    transform:translateX(-50%) translateY(-3px);
+    color:#fff;
+    opacity:1;
+}
+.scroll-down span{
+    width:2px;
+    height:24px;
+    border-radius:999px;
+    background:linear-gradient(180deg, rgba(56,189,248,.2), rgba(56,189,248,.92), rgba(124,58,237,.82));
+    box-shadow:0 0 18px rgba(56,189,248,.32);
+    animation:scrollPulse 1.8s ease-in-out infinite;
+}
+.scroll-down p{
+    margin:0;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+}
+@keyframes scrollPulse{
+    0%,100%{ transform:scaleY(.78); opacity:.55; }
+    50%{ transform:scaleY(1.18); opacity:1; }
+}
+
+/* About: one centered column to remove the left/right lệch */
+.about-container{
+    grid-template-columns:1fr;
+    max-width:860px;
+    margin-inline:auto;
+    justify-items:center;
+}
+.about-content{
+    width:100%;
+    max-width:860px;
+}
+.about-info{
+    max-width:760px;
+    margin-top:28px;
+}
+
+/* Stats section: 4 balanced premium cards */
+.stats{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 8% 110px;
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    gap:16px;
+}
+.stat-card{
+    position:relative;
+    overflow:hidden;
+    padding:24px 18px;
+    text-align:center;
+    border-radius:24px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    box-shadow:0 16px 36px rgba(0,0,0,.22);
+    transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+.stat-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg, rgba(56,189,248,.14), rgba(124,58,237,.10));
+    opacity:0;
+    transition:opacity .28s ease;
+}
+.stat-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(56,189,248,.28);
+    box-shadow:0 18px 40px rgba(56,189,248,.14);
+}
+.stat-card:hover::before{
+    opacity:1;
+}
+.stat-card i{
+    position:relative;
+    z-index:1;
+    font-size:26px;
+    color:#7dd3fc;
+    margin-bottom:12px;
+    display:inline-flex;
+    width:54px;
+    height:54px;
+    align-items:center;
+    justify-content:center;
+    border-radius:18px;
+    background:rgba(56,189,248,.08);
+    border:1px solid rgba(56,189,248,.15);
+}
+.stat-card .counter,
+.stat-card h2{
+    position:relative;
+    z-index:1;
+    font-size:clamp(28px, 4vw, 42px);
+    line-height:1;
+    margin-bottom:8px;
+    font-weight:800;
+    background:linear-gradient(135deg, #e2e8f0 0%, #38bdf8 45%, #8b5cf6 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+.stat-card p{
+    position:relative;
+    z-index:1;
+    margin:0;
+    color:var(--text2);
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+/* Music player: even more centered and compact */
+.music-player{
+    max-width:920px;
+    margin-inline:auto;
+    padding:30px 24px 26px;
+}
+.music-cover-wrap{
+    width:min(100%, 300px);
+}
+.music-cover{
+    width:230px;
+    height:230px;
+}
+.music-meta{
+    width:min(100%, 760px);
+}
+.music-meta h3{
+    text-align:center;
+}
+.music-meta p{
+    text-align:center;
+}
+.music-progress-row{
+    max-width:760px;
+    margin-inline:auto;
+}
+.music-controls{
+    gap:12px;
+}
+.music-btn{
+    width:52px;
+    height:52px;
+}
+.music-btn.play{
+    width:72px;
+    height:72px;
+}
+
+/* Projects and services: smaller, cleaner, balanced */
+.project-grid,
+.service-grid{
+    max-width:1020px;
+    margin-inline:auto;
+    gap:18px;
+}
+.project-card,
+.service-card{
+    padding:26px 22px;
+    min-height:unset;
+}
+.project-card i,
+.service-card i{
+    font-size:34px;
+    margin-bottom:14px;
+}
+.project-card h3,
+.service-card h3{
+    font-size:20px;
+}
+.project-card p,
+.service-card p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* Contact icons: neater and more premium */
+.contact-grid{
+    max-width:960px;
+    margin-inline:auto;
+    gap:16px;
+}
+.contact-card{
+    min-height:162px;
+    padding:20px 16px;
+}
+.contact-card i{
+    width:54px;
+    height:54px;
+    border-radius:18px;
+    font-size:22px;
+}
+
+/* Loader: centered with avatar and neon ring in the middle */
+#loader{
+    background:
+        radial-gradient(circle at 50% 32%, rgba(56,189,248,.16), transparent 28%),
+        radial-gradient(circle at 50% 76%, rgba(124,58,237,.12), transparent 28%),
+        #050816;
+}
+.loader-box{
+    width:min(92vw, 460px);
+    padding:38px 28px 28px;
+}
+.loader-figure{
+    position:relative;
+    width:176px;
+    height:176px;
+    margin:0 auto 8px;
+    display:grid;
+    place-items:center;
+}
+.loader-ring{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    transform:none;
+}
+.loader-avatar{
+    width:112px;
+    height:112px;
+    border-radius:50%;
+    object-fit:cover;
+    z-index:1;
+    animation:loaderAvatarFloat 4s ease-in-out infinite;
+}
+
+/* Better balance for the existing hero stats above */
+.hero-stats .stat-box:nth-child(4){
+    display:none;
+}
+
+/* Mobile-friendly tweaks */
+@media (max-width: 1100px){
+    .hero-container{
+        grid-template-columns:minmax(260px, 300px) 1fr;
+        gap:28px;
+    }
+}
+
+@media (max-width: 860px){
+    .hero-container{
+        grid-template-columns:1fr;
+        justify-items:center;
+    }
+    .hero-left{
+        order:1;
+    }
+    .hero-right{
+        order:2;
+        width:100%;
+    }
+    .hero-stats{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+    .stats{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+    .project-grid,
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+    .contact-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px){
+    .hero{
+        padding-top:120px;
+        padding-bottom:92px;
+    }
+    .hero-stats{
+        grid-template-columns:1fr;
+    }
+    .stats{
+        grid-template-columns:1fr 1fr;
+        padding-left:16px;
+        padding-right:16px;
+    }
+    .about-info{
+        grid-template-columns:1fr;
+    }
+    .music-player{
+        padding:22px 16px 18px;
+    }
+    .music-cover{
+        width:210px;
+        height:210px;
+    }
+    .music-controls{
+        gap:10px;
+    }
+    .music-btn{
+        width:48px;
+        height:48px;
+    }
+    .music-btn.play{
+        width:66px;
+        height:66px;
+    }
+    .contact-grid{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+    .contact-card{
+        min-height:150px;
+        padding:16px 12px;
+    }
+    .scroll-down{
+        bottom:18px;
+    }
+    .loader-box{
+        padding:30px 20px 22px;
+    }
+    .loader-figure{
+        width:154px;
+        height:154px;
+    }
+    .loader-avatar{
+        width:98px;
+        height:98px;
+    }
+}
+
+/* Keep gallery hidden if present */
+.gallery,
+.gallery-grid,
+.gallery-item{
+    display:none !important;
+}
+
+/* ===============================
+   LAYOUT BALANCE FIXES
+============================== */
+
+.hero-container{
+    grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
+    gap: 56px;
+    max-width: 1240px;
+    margin-inline: auto;
+}
+
+.hero-right .glass-card{
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.about-container{
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.about-content{
+    width: min(100%, 860px);
+    margin-inline: auto;
+}
+
+.skills-container{
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+    gap: 30px;
+    align-items: start;
+}
+
+.project-grid,
+.service-grid,
+.contact-grid{
+    align-items: stretch;
+}
+
+.project-grid,
+.service-grid{
+    max-width: 1040px;
+    margin-inline: auto;
+    gap: 22px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+}
+
+.contact-grid{
+    max-width: 1040px;
+    margin-inline: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+}
+
+.project-card,
+.service-card,
+.contact-card{
+    height: 100%;
+}
+
+.project-card,
+.service-card{
+    min-height: 240px;
+}
+
+.contact-card{
+    min-height: 170px;
+}
+
+.hero-stats{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.music-player{
+    align-items: stretch;
+    gap: 24px;
+}
+
+.music-meta{
+    width: 100%;
+}
+
+
+/*==================================================
+    BLUEBLACK PREMIUM FIX V5
+==================================================*/
+
+/* Hero spacing: keep avatar and right card farther apart */
+.hero-container{
+    grid-template-columns: minmax(320px, 420px) minmax(0, 1fr) !important;
+    gap: 84px !important;
+    align-items: center !important;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.hero-left{
+    padding-right: 10px;
+}
+
+.hero-right .glass-card{
+    padding: 44px 44px 38px !important;
+    border-radius: 32px !important;
+}
+
+.avatar-card{
+    padding: 18px;
+}
+
+.avatar{
+    width: min(72vw, 302px);
+    height: min(72vw, 302px);
+}
+
+.avatar-ring{
+    inset: -26px;
+}
+
+/* Music: premium 2-column layout on desktop */
+.music-player{
+    display: grid !important;
+    grid-template-columns: minmax(280px, 320px) minmax(0, 1fr) !important;
+    gap: 34px !important;
+    align-items: center !important;
+    max-width: 1080px !important;
+    padding: 36px 34px !important;
+    border-radius: 34px !important;
+}
+
+.music-cover-wrap{
+    width: 100% !important;
+    justify-content: center;
+}
+
+.music-cover{
+    width: min(100%, 300px) !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px !important;
+}
+
+.music-meta{
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.music-label{
+    margin-inline: 0 !important;
+}
+
+.music-progress-row{
+    max-width: 100% !important;
+    margin-bottom: 22px !important;
+}
+
+.music-controls{
+    justify-content: flex-start !important;
+}
+
+.music-playlist{
+    max-width: 100% !important;
+}
+
+/* Contact: lock to 2 columns with even spacing */
+.contact-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    max-width: 980px !important;
+    margin-inline: auto;
+    grid-auto-flow: row;
+}
+
+.contact-card{
+    min-height: 180px;
+}
+
+/* Background video visibility and stability */
+#bg-video{
+    opacity: 1;
+    object-position: center center;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+

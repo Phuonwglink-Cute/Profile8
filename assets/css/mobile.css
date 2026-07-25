@@ -1,0 +1,320 @@
+/* Mobile-first polish for BlueBlack Premium */
+
+@media (max-width: 768px){
+    html{
+        scroll-padding-top: 88px;
+    }
+
+    #header{
+        padding: 14px 16px;
+    }
+
+    .navbar{
+        gap: 12px;
+    }
+
+    .logo{
+        font-size: 20px;
+        gap: 8px;
+    }
+
+    .nav-actions button{
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero{
+        padding: 106px 16px 84px;
+    }
+
+    .hero-right .glass-card{
+        padding: 24px 18px 22px;
+    }
+
+    .hero h1{
+        font-size: clamp(36px, 10vw, 48px);
+    }
+
+    .hero h2{
+        font-size: clamp(20px, 5vw, 26px);
+    }
+
+    .hero-buttons{
+        gap: 10px;
+    }
+
+    .btn{
+        padding: 12px 18px;
+        min-width: 140px;
+    }
+
+    .hero-stats{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-title{
+        margin-bottom: 38px;
+    }
+
+    .section-title h2{
+        font-size: clamp(26px, 7vw, 34px);
+    }
+
+    section{
+        padding: 84px 16px;
+    }
+
+    .scroll-down{
+        bottom: 14px;
+    }
+
+    .music-player{
+        padding: 20px 14px 16px;
+    }
+
+    .music-cover{
+        width: 194px;
+        height: 194px;
+    }
+
+    .music-meta h3{
+        font-size: 22px;
+    }
+
+    .music-meta p{
+        font-size: 14px;
+    }
+
+    .music-progress-row{
+        grid-template-columns: 44px 1fr 44px;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .music-btn{
+        width: 46px;
+        height: 46px;
+        border-radius: 16px;
+    }
+
+    .music-btn.play{
+        width: 64px;
+        height: 64px;
+    }
+
+    .stats{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-bottom: 92px;
+    }
+
+    .stat-card{
+        padding: 20px 14px;
+        border-radius: 22px;
+    }
+
+    .project-card,
+    .service-card{
+        padding: 22px 18px;
+    }
+
+    .contact-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-card{
+        min-height: 146px;
+    }
+
+    .loader-box{
+        width: min(94vw, 420px);
+    }
+
+    .loader-brand{
+        letter-spacing: .34em;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-buttons .btn{
+        width:100%;
+        min-width:0;
+    }
+
+    .hero-stats,
+    .stats{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .social-list{
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content{
+        padding: 26px 18px;
+    }
+
+    .about-info{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1100px){
+    .hero-container{
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .hero-left{
+        order: -1;
+    }
+
+    .hero-right .glass-card{
+        max-width: 100%;
+    }
+
+    .skills-container,
+    .project-grid,
+    .service-grid,
+    .contact-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-content{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px){
+    .skills-container,
+    .project-grid,
+    .service-grid,
+    .contact-grid,
+    .hero-stats{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons,
+    .social-list{
+        justify-content: center;
+    }
+
+    .section-title,
+    .about-content{
+        text-align: center;
+    }
+
+    .music-progress-row{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .music-progress{
+        width: 100%;
+    }
+}
+
+
+/*==================================================
+    BLUEBLACK PREMIUM FIX V5 - MOBILE
+==================================================*/
+
+@media (max-width: 1100px){
+    .hero-container{
+        gap: 52px !important;
+    }
+
+    .music-player{
+        grid-template-columns: 1fr !important;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .music-meta{
+        text-align: center !important;
+    }
+
+    .music-controls{
+        justify-content: center !important;
+    }
+
+    .music-progress-row{
+        justify-items: center;
+    }
+
+    .music-progress{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .hero{
+        padding-top: 118px !important;
+    }
+
+    .hero-container{
+        gap: 36px !important;
+    }
+
+    .hero-right .glass-card{
+        padding: 30px 20px 26px !important;
+    }
+
+    .avatar-card{
+        padding: 8px;
+    }
+
+    .avatar{
+        width: min(76vw, 260px);
+        height: min(76vw, 260px);
+    }
+
+    .avatar-ring{
+        inset: -18px;
+    }
+
+    .music-player{
+        padding: 26px 18px !important;
+        border-radius: 28px !important;
+    }
+
+    .music-cover{
+        width: min(100%, 240px) !important;
+    }
+
+    .contact-grid{
+        gap: 14px !important;
+    }
+
+    .contact-card{
+        min-height: 154px;
+        padding: 18px 14px;
+    }
+}
+
+@media (max-width: 540px){
+    .contact-grid{
+        grid-template-columns: 1fr !important;
+    }
+
+    .hero-buttons .btn{
+        width: 100%;
+    }
+
+    .music-btn{
+        width: 48px !important;
+        height: 48px !important;
+        border-radius: 16px !important;
+    }
+
+    .music-btn.play{
+        width: 66px !important;
+        height: 66px !important;
+    }
+}
+

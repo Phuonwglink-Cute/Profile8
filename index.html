@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trần Bá Hiếu • Creative Developer</title>
+<meta content="Portfolio cá nhân của Trần Bá Hiếu" name="description"/>
+<meta content="Portfolio, HTML, CSS, JavaScript, Frontend Developer" name="keywords"/>
+<meta content="#0b1220" name="theme-color"/>
+<link href="assets/images/avatar.jpg" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="assets/css/overrides.css" rel="stylesheet"/>
+<link href="assets/css/mobile.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ===================== -->
+<!-- LOADING -->
+<!-- ===================== -->
+<div id="loader">
+<div class="loader-box">
+<div class="loader-figure">
+<div class="loader-ring"></div>
+<img alt="Avatar" class="loader-avatar" loading="eager" src="assets/images/avatar.jpg"/>
+</div>
+<div class="loader-particles" id="loaderParticles"></div>
+<div class="loader-brand">HIEUDEV VIP</div>
+<h2>Loading Portfolio</h2>
+<div class="loader-percent" id="loaderPercent">1%</div>
+<div class="loader-bar">
+<span id="loaderBar"></span>
+</div>
+<p class="loader-sub">
+            Initializing Premium Experience...
+        </p>
+</div>
+</div>
+<!-- ===================== -->
+<!-- VIDEO BACKGROUND -->
+<!-- ===================== -->
+<video autoplay="" id="bg-video" loop="" muted="" playsinline="" preload="auto" poster="assets/images/avatar.jpg">
+<source src="assets/video/background.mp4" type="video/mp4"/>
+</video>
+<div class="overlay"></div>
+<canvas id="particles"></canvas>
+<!-- ===================== -->
+<!-- HEADER -->
+<!-- ===================== -->
+<header id="header">
+<nav class="navbar">
+<a class="logo" href="#home">
+<i class="fa-solid fa-code"></i>
+<span>HIEU</span>
+</a>
+<ul class="nav-menu">
+<li>
+<a class="active" href="#home">
+                        Home
+                    </a>
+</li>
+<li>
+<a href="#about">
+                        About
+                    </a>
+</li>
+<li>
+<a href="#skills">
+                        Skills
+                    </a>
+</li>
+<li>
+<a href="#project">
+                        Projects
+                    </a>
+</li>
+<li>
+<a href="#music">
+                        Music
+                    </a>
+</li>
+<li>
+<a href="#donate">
+                        Donate
+                    </a>
+</li>
+<li>
+<a href="#contact">
+                        Contact
+                    </a>
+</li>
+</ul>
+<div class="nav-actions">
+<button id="themeToggle">
+<i class="fa-solid fa-moon"></i>
+</button>
+<button id="menuBtn">
+<i class="fa-solid fa-bars"></i>
+</button>
+</div>
+</nav>
+</header>
+<!-- ===================== -->
+<!-- HERO -->
+<!-- ===================== -->
+<section class="hero" id="home">
+<div class="hero-container">
+<!-- LEFT -->
+<div class="hero-left">
+<div class="avatar-card">
+<div class="avatar-ring"></div>
+<img alt="Trần Bá Hiếu" class="avatar" loading="lazy" src="assets/images/avatar.jpg"/>
+</div>
+</div>
+<!-- RIGHT -->
+<div class="hero-right">
+<div class="glass-card">
+<div class="badge">
+<i class="fa-solid fa-bolt"></i>
+
+                        Creative Portfolio
+
+                    </div>
+<h3>
+
+                        Xin chào 👋
+
+                    </h3>
+<h1>
+
+                        Trần Bá Hiếu
+
+                    </h1>
+<h2>
+<span class="typing"></span>
+</h2>
+<p>
+
+                        Mình là một Frontend Developer yêu thích
+                        thiết kế giao diện hiện đại, tối ưu hiệu năng
+                        và tạo ra trải nghiệm người dùng mượt mà trên
+                        mọi thiết bị.
+
+                    </p>
+<!-- BUTTON -->
+<div class="hero-buttons">
+<a class="btn primary" href="#project">
+<i class="fa-solid fa-rocket"></i>
+
+                            Xem Dự Án
+
+                        </a>
+<a class="btn secondary" href="#donate">
+<i class="fa-solid fa-heart"></i>
+
+                            Donate
+
+                        </a>
+<a class="btn outline" href="#contact">
+<i class="fa-solid fa-paper-plane"></i>
+
+                            Liên Hệ
+
+                        </a>
+</div>
+<!-- SOCIAL -->
+<div class="social-list">
+<a href="https://www.facebook.com/HjeuDepZaiii/" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://github.com/HieuDev-ViP" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+<a href="#contact">
+<i class="fab fa-discord"></i>
+</a>
+<a href="https://www.tiktok.com/@hieudepzaii_63" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+<a href="https://t.me/HjeuDepZaii63" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-telegram"></i>
+</a>
+</div>
+<!-- STATS -->
+<div class="hero-stats">
+<div class="stat-box">
+<h2 data-count="20">
+
+                                20+
+
+                            </h2>
+<span>
+
+                                Projects
+
+                            </span>
+</div>
+<div class="stat-box">
+<h2 data-count="2">
+
+                                2+
+
+                            </h2>
+<span>
+
+                                Years
+
+                            </span>
+</div>
+<div class="stat-box">
+<h2 data-count="100">
+
+                                100%
+
+                            </h2>
+<span>
+
+                                Passion
+
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Down -->
+<a class="scroll-down" href="#about">
+<span></span>
+<p>Scroll Down</p>
+</a>
+</section>
+<!-- ===================== -->
+<!-- ABOUT -->
+<!-- ===================== -->
+<section class="about" id="about">
+<div class="section-title">
+<span>ABOUT ME</span>
+<h2>Giới Thiệu</h2>
+<p>
+            Một vài thông tin về bản thân và định hướng phát triển.
+        </p>
+</div>
+<div class="about-container">
+<div class="about-content glass-card about-vip-card">
+<div class="vip-head">
+<span class="vip-dot"></span>
+<span>PROFILE / VIP10</span>
+</div>
+<h3>
+                Trần Bá Hiếu
+            </h3>
+<p>
+                Xin chào! Mình là <strong>Trần Bá Hiếu</strong>.
+                Mình yêu thích lập trình, thiết kế giao diện
+                hiện đại và xây dựng những website nhanh,
+                đẹp và tối ưu trải nghiệm người dùng.
+            </p>
+<p>
+                Mục tiêu của mình là không ngừng học hỏi,
+                nâng cao kỹ năng và tạo ra những sản phẩm
+                chất lượng cao có thể sử dụng trong thực tế.
+            </p>
+<div class="about-info">
+<div class="info-item">
+<i class="fa-solid fa-user"></i>
+<span>Trần Bá Hiếu</span>
+</div>
+<div class="info-item">
+<i class="fa-solid fa-location-dot"></i>
+<span>Việt Nam</span>
+</div>
+<div class="info-item">
+<i class="fa-solid fa-code"></i>
+<span>Frontend Developer</span>
+</div>
+<div class="info-item">
+<i class="fa-solid fa-heart"></i>
+<span>HTML • CSS • JavaScript</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- SKILLS -->
+<!-- ===================== -->
+<section class="skills" id="skills">
+<div class="section-title">
+<span>MY SKILLS</span>
+<h2>Kỹ Năng</h2>
+<p>
+                Những công nghệ mình thường sử dụng để phát triển website.
+            </p>
+</div>
+<div class="skills-container">
+<div class="skills-left">
+<div class="skill-card">
+<div class="skill-header">
+<span>HTML5</span>
+<span>95%</span>
+</div>
+<div class="progress">
+<div class="bar html"></div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-header">
+<span>CSS3</span>
+<span>92%</span>
+</div>
+<div class="progress">
+<div class="bar css"></div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-header">
+<span>JavaScript</span>
+<span>88%</span>
+</div>
+<div class="progress">
+<div class="bar js"></div>
+</div>
+</div>
+<div class="skill-card">
+<div class="skill-header">
+<span>UI / UX</span>
+<span>85%</span>
+</div>
+<div class="progress">
+<div class="bar ui"></div>
+</div>
+</div>
+</div>
+<div class="skills-right">
+<div class="glass-card vip-services">
+<div class="vip-tag">
+<i class="fa-solid fa-crown"></i>
+                    VIP10
+                </div>
+<h3>Mình có thể làm gì?</h3>
+<div class="vip-list">
+<p>Thiết kế Website hiện đại</p>
+<p>Landing Page</p>
+<p>Portfolio</p>
+<p>Responsive Mobile</p>
+<p>Animation CSS &amp; JavaScript</p>
+<p>Tối ưu hiệu năng Website</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- STATS -->
+<!-- ===================== -->
+<section class="stats">
+<div class="stat-card">
+<i class="fa-solid fa-code"></i>
+<h2 class="counter" data-target="99">0</h2>
+<p>Dự Án</p>
+</div>
+<div class="stat-card">
+<i class="fa-solid fa-user-group"></i>
+<h2 class="counter" data-target="99">0</h2>
+<p>Khách Hàng</p>
+</div>
+<div class="stat-card">
+<i class="fa-solid fa-award"></i>
+<h2 class="counter" data-target="2">0</h2>
+<p>Năm Kinh Nghiệm</p>
+</div>
+<div class="stat-card">
+<i class="fa-solid fa-heart"></i>
+<h2>100%</h2>
+<p>Đam Mê</p>
+</div>
+</section>
+<!-- ===================== -->
+<!-- SERVICES -->
+<!-- ===================== -->
+<section class="services">
+<div class="section-title">
+<span>SERVICES</span>
+<h2>Dịch Vụ</h2>
+</div>
+<div class="service-grid">
+<div class="service-card">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>Web Design</h3>
+<p>
+
+                    Thiết kế website hiện đại,
+                    giao diện đẹp và tối ưu.
+
+                </p>
+</div>
+<div class="service-card">
+<i class="fa-solid fa-mobile-screen"></i>
+<h3>Responsive</h3>
+<p>
+
+                    Hiển thị hoàn hảo trên
+                    Mobile, Tablet và Desktop.
+
+                </p>
+</div>
+<div class="service-card">
+<i class="fa-solid fa-rocket"></i>
+<h3>Performance</h3>
+<p>
+
+                    Tối ưu tốc độ tải,
+                    SEO và trải nghiệm người dùng.
+
+                </p>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- PROJECT -->
+<!-- ===================== -->
+<section class="projects" id="project">
+<div class="section-title">
+<span>PROJECTS</span>
+<h2>Dự Án Nổi Bật</h2>
+</div>
+<div class="project-grid">
+<div class="project-card">
+<i class="fa-solid fa-globe"></i>
+<h3>Portfolio Website</h3>
+<p>
+
+                    Website cá nhân hiện đại
+                    với HTML, CSS và JavaScript.
+
+                </p>
+<a href="https://github.com/HieuDev-ViP">
+
+                    Xem thêm
+
+                    <i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div class="project-card">
+<i class="fa-solid fa-cart-shopping"></i>
+<h3>E-Commerce UI</h3>
+<p>
+
+                    Giao diện bán hàng
+                    chuẩn Responsive.
+
+                </p>
+<a href="#contact">
+
+                    Xem thêm
+
+                    <i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+<div class="project-card">
+<i class="fa-solid fa-layer-group"></i>
+<h3>Dashboard</h3>
+<p>
+
+                    Hệ thống Dashboard
+                    giao diện chuyên nghiệp.
+
+                </p>
+<a href="#about">
+
+                    Xem thêm
+
+                    <i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- MUSIC -->
+<!-- ===================== -->
+<section class="music" id="music">
+<div class="section-title">
+<span>MUSIC</span>
+<h2>Now Playing</h2>
+<p>
+                Playlist nhiều bài hát với cover thay đổi theo từng track.
+            </p>
+</div>
+<div class="music-player glass-card">
+<div class="music-cover-wrap">
+<div class="music-cover-glow"></div>
+<img alt="Music Cover" class="music-cover" id="musicCover" loading="lazy" src="assets/images/avatar.jpg"/>
+</div>
+<div class="music-meta">
+<div class="music-label">
+                    ♪ Now Playing
+                </div>
+<h3 id="musicTitle">Loading...</h3>
+<p id="musicArtist">Trần Bá Hiếu</p>
+<div class="music-progress-row">
+<span id="musicCurrent">0:00</span>
+<div class="music-progress" id="musicTimeline">
+<span id="musicProgress"></span>
+<i id="musicThumb"></i>
+</div>
+<span id="musicDuration">0:00</span>
+</div>
+<div class="music-controls">
+<button aria-label="Shuffle" class="music-btn" id="musicShuffle">
+<i class="fa-solid fa-shuffle"></i>
+</button>
+<button aria-label="Previous" class="music-btn" id="musicPrev">
+<i class="fa-solid fa-backward-step"></i>
+</button>
+<button aria-label="Play" class="music-btn play" id="musicPlay">
+<i class="fa-solid fa-play"></i>
+</button>
+<button aria-label="Next" class="music-btn" id="musicNext">
+<i class="fa-solid fa-forward-step"></i>
+</button>
+<button aria-label="Repeat" class="music-btn" id="musicRepeat">
+<i class="fa-solid fa-repeat"></i>
+</button>
+</div>
+<div class="music-playlist" id="musicPlaylist"></div>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- DONATE -->
+<!-- ===================== -->
+<section class="donate" id="donate">
+<div class="section-title">
+<span>SUPPORT</span>
+<h2>Ủng Hộ Mình ❤️</h2>
+<p>Mỗi sự ủng hộ đều là động lực để mình phát triển thêm nhiều dự án chất lượng.</p>
+</div>
+<div class="donate-card glass-card">
+<img alt="QR Donate" class="qr-image" loading="lazy" src="assets/images/qr-bank.jpg"/>
+<h3>Quét mã QR</h3>
+<p>
+                Ngân hàng: MB Bank<br/>
+                Chủ tài khoản: Trần Bá Hiếu<br/>
+                Số tài khoản: 0123456789990
+            </p>
+<div class="donate-buttons">
+<button class="btn primary" id="copyBank">
+<i class="fa-solid fa-copy"></i>
+
+                    Sao chép STK
+
+                </button>
+<button class="btn secondary" id="showQR">
+<i class="fa-solid fa-expand"></i>
+
+                    Phóng to QR
+
+                </button>
+</div>
+</div>
+</section>
+<!-- ===================== -->
+<!-- CONTACT -->
+<!-- ===================== -->
+<section class="contact" id="contact">
+<div class="section-title">
+<span>CONTACT</span>
+<h2>Kết Nối Với Mình</h2>
+</div>
+<div class="contact-grid">
+<a class="contact-card" href="https://www.facebook.com/HjeuDepZaiii/" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-facebook-f"></i>
+<h3>Facebook</h3>
+<span>Theo dõi mình</span>
+</a>
+<a class="contact-card" href="https://github.com/HieuDev-ViP" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-github"></i>
+<h3>GitHub</h3>
+<span>Mã nguồn</span>
+</a>
+<a class="contact-card" href="https://www.instagram.com/hjeudepzaiii" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-instagram"></i>
+<h3>Instagram</h3>
+<span>Khoảnh khắc đẹp</span>
+</a>
+<a class="contact-card" href="https://www.tiktok.com/@hieudepzaii_63" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-tiktok"></i>
+<h3>TikTok</h3>
+<span>Video ngắn</span>
+</a>
+<a class="contact-card" href="https://t.me/HjeuDepZaii63" rel="noopener noreferrer" target="_blank">
+<i class="fab fa-telegram"></i>
+<h3>Telegram</h3>
+<span>Liên hệ nhanh</span>
+</a>
+<a class="contact-card" href="mailto:tranbahieunolove@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<span>Gửi email</span>
+</a>
+</div>
+</section>
+<!-- ===================== -->
+<!-- FOOTER -->
+<!-- ===================== -->
+<footer>
+<div class="footer-content">
+<h2>
+
+                Trần Bá Hiếu
+
+            </h2>
+<p>
+
+                Frontend Developer • UI Designer • Creative Coder
+
+            </p>
+<div class="footer-social">
+<a href="https://www.facebook.com/HjeuDepZaiii/" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="https://github.com/HieuDev-ViP" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+<a href="https://www.instagram.com/hjeudepzaiii" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@hieudepzaii_63" rel="noopener noreferrer" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+<p class="copyright">
+
+                © Trần Bá Hiếu. All Rights Reserved 2026.
+
+            </p>
+</div>
+</footer>
+<!-- Back To Top -->
+<button id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<!-- Toast -->
+<div id="toast"></div>
+<!-- Popup QR -->
+<div id="qrModal">
+<div class="qr-modal-content">
+<span id="closeQR">
+
+                ×
+
+            </span>
+<img alt="QR Donate" loading="lazy" src="assets/images/qr-bank.jpg"/>
+</div>
+</div>
+<!-- Audio -->
+<audio id="musicAudio" preload="metadata"></audio>
+<!-- Config -->
+<script defer="" src="assets/js/config.js"></script>
+<!-- Script -->
+<script defer="" src="script.js"></script>
+</body>
+</html>
